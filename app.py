@@ -7,24 +7,8 @@ import io
 
 import fitz  # PyMuPDF
 import streamlit as st
-import streamlit.components.v1 as components
 
 st.set_page_config(page_title="PDF 페이지 추출기", page_icon="📄", layout="centered")
-
-# Google Analytics
-components.html(
-    """
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY0E36RKW6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DY0E36RKW6');
-    </script>
-    """,
-    height=0,
-)
-
 st.title("📄 PDF 페이지 추출기")
 st.caption("원하는 페이지만 골라서 새 PDF로 만들어 줍니다. 인쇄선(재단선)은 자동으로 제거됩니다.")
 
