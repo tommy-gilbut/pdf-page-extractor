@@ -1,0 +1,7 @@
+services:
+  pdf-extractor:
+    build: .
+    container_name: pdf-extractor
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
